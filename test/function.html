@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 1
+
+        function demo(data){
+            console.log(data);
+        }
+
+        // 难道说这里是参数的函数是另一个函数吗？
+        function dataFunction(shuju){
+            a = shuju
+            return a
+        }
+
+        demo(dataFunction(100000))
+        console.log(a);
+
+
+
+
+    </script>
+</body>
+</html>
